@@ -72,12 +72,14 @@ arrays:
    #    APIToken: "6554807e-d229-ae69-552b-03ef7d2d0e27" 
    
      # Virtual
+     # Active-Cluster
      - MgmtEndPoint: "10.220.113.39"
        APIToken: "9c632128-d718-bfff-59dd-769c0d9ab2c7"
      - MgmtEndPoint: "10.220.113.41"
        APIToken: "e49d5a20-c56d-06d0-458f-2ccfe319cbe2"
-     - MgmtEndPoint: "10.220.113.43"
-       APIToken: "8eeca207-02b5-5f40-4e53-a9e328ac9c78"
+     # Async (Safe-Mode enabled)
+     #- MgmtEndPoint: "10.220.113.43"
+     #  APIToken: "8eeca207-02b5-5f40-4e53-a9e328ac9c78"
 
    FlashBlades:
 
