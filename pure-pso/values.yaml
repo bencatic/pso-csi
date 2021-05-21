@@ -9,7 +9,7 @@
 # RESTRICTIONS:
 #  max length: 22
 #  characters allowed: alphanumeric and underscores
-clusterID: bencatic_muclab
+clusterID: benc
 
 # Set this to 'true' if intended to upgrade from PSO 5 to PSO 6, enabling this flag will run
 # db construction which populate PSO 6 DB with existing resources managed by PSO 5
@@ -45,38 +45,23 @@ DBTopology:
 # and "APIToken", and for FlashBlades you need the additional "NFSEndPoint" parameter.
 # The labels are optional, and can be any key-value pair for use with the "fleet"
 # provisioner. An example is shown below:
-# arrays:
-#   FlashArrays:
-#     - MgmtEndPoint: "1.2.3.4"
-#       APIToken: "a526a4c6-18b0-a8c9-1afa-3499293574bb"
-#       Labels:
-#     - MgmtEndPoint: "1.2.3.5"
-#       APIToken: "b526a4c6-18b0-a8c9-1afa-3499293574bb"
-#   FlashBlades:
-#     - MgmtEndPoint: "1.2.3.6"
-#       APIToken: "T-c4925090-c9bf-4033-8537-d24ee5669135"
-#       NFSEndPoint: "1.2.3.7"
-#       Labels:
-#     - MgmtEndPoint: "1.2.3.8"
-#       APIToken: "T-d4925090-c9bf-4033-8537-d24ee5669135"
-#       NFSEndPoint: "1.2.3.9"
 arrays:
    FlashArrays:
 
    # Infrastructure
-   #  - MgmtEndPoint: "10.220.112.103"
-   #    APIToken: "0657628c-7656-15c4-8b84-bbdf8c1c4215"
-   #  - MgmtEndPoint: "10.220.112.106"
-   #    APIToken: "88196fa0-92b7-237a-3027-a46feba63aa"
-   #  - MgmtEndPoint: "10.220.112.115"
-   #    APIToken: "6554807e-d229-ae69-552b-03ef7d2d0e27" 
+     #- MgmtEndPoint: "10.220.112.103"
+     #  APIToken: "0657628c-7656-15c4-8b84-bbdf8c1c4215"
+     #- MgmtEndPoint: "10.220.112.106"
+     #  APIToken: "88196fa0-92b7-237a-3027-a46feba63aa3"
+     - MgmtEndPoint: "10.220.112.115"
+       APIToken: "6554807e-d229-ae69-552b-03ef7d2d0e27" 
    
      # Virtual
      # Active-Cluster
-     - MgmtEndPoint: "10.220.113.39"
-       APIToken: "9c632128-d718-bfff-59dd-769c0d9ab2c7"
-     - MgmtEndPoint: "10.220.113.41"
-       APIToken: "e49d5a20-c56d-06d0-458f-2ccfe319cbe2"
+     #- MgmtEndPoint: "10.220.113.39"
+     #  APIToken: "9c632128-d718-bfff-59dd-769c0d9ab2c7"
+     #- MgmtEndPoint: "10.220.113.41"
+     #  APIToken: "e49d5a20-c56d-06d0-458f-2ccfe319cbe2"
      # Async (Safe-Mode enabled)
      #- MgmtEndPoint: "10.220.113.43"
      #  APIToken: "8eeca207-02b5-5f40-4e53-a9e328ac9c78"
